@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Cotiza tu seguro de Auto</h1>
+        </header>
+
+        <form action="#" class="container--form">
+            <div class="izquierda">
+                <div class="izquierda--label">
+                    <label for="marca">Marca:</label>
+                    <select name="marca" id="marca">
+                        <option value="">Seleccionar</option>
+                        <option value="1">Americano</option>
+                        <option value="2">Asiatico</option>
+                        <option value="3">Europeo</option>
+                    </select>
+                </div>
+                <div class="izquierda--label">
+                    <label for="year">Año:</label>
+                    <select name="year" id="year"></select>
+                </div>
+            </div>
+            <div class="derecha">
+                <fieldset class="derecha--campo">
+                    <legend>Tipo de Seguro</legend>
+                    <div class="derecha--campo--check">
+                        <label for="">Básico</label>
+                        <input type="radio" name="tipo" value="basico" checked>
+                    </div>
+                    <div class="derecha--campo--check">
+                        <label for="">
+                            Completo
+                        </label>
+                        <input type="radio" name="tipo" value="completo">
+                    </div>
+                </fieldset>
+                <div class="button">
+                    <button type="submit" class="item"> Cotizar Seguro </button>
+                </div>
+            </div>
+            
+            <div id="cargando" class="hidden">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </div>
+            <div id="resultado"></div>
+            
+        </form>
+        
+        
+    </div>
+    <div class="area">
+        <ul class="circle">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+</body>
+
+</html>
