@@ -83,6 +83,7 @@ UI.prototype.mostrarMensaje = (mensaje, tipo) => {
         div.classList.add( 'correcto')
     }
 
+    
     div.classList.add('mensaje')
     div.textContent = mensaje;
 
@@ -115,6 +116,8 @@ UI.prototype.mostrarResultado = (total, seguro) => {
     //crear resultado
     const div = document.createElement('div');
     div.classList.add('seguro-resumen');
+    div.style.width = '500px'
+    div.style.margin= '0 auto'
     div.innerHTML = `
         <p class='header'>Tu Resumen</p>
         <p class='font-bold'>Marca: <span class="font-normal"> ${textMarca}</span></p>
@@ -129,7 +132,7 @@ UI.prototype.mostrarResultado = (total, seguro) => {
     //mostrar el spinner
     
         // const spinner = doument.querySelector('#cargando');
-        // spinner.classList.toggle('hidden')
+        // spinner.style.overflow = 'hidden'
         // spinner.style.display = 'block';
         
     setTimeout(() => {

@@ -11,8 +11,8 @@ body{
     /* width: 100%; */
     height:100vh;
     /* padding: 40px; */
-    width: 100%;
-    
+    /* width: 100%; */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
+    /* padding: 30px; */
     box-shadow: 1px 1px 5px,
                 10px 10px 55px ;
     align-items: center;
@@ -53,7 +53,7 @@ body{
 .derecha{
     gap: 20px;
     display: flex;
-    /* width: 100%; */
+    width: 80%;
     flex-direction: column;
     justify-content: center;
 }
@@ -106,10 +106,7 @@ body{
     width: 20px;
     height: 20px;
 }
-.button{
-    
-    margin: 0 auto;
-}
+
 
 #resultado{
     margin-top: 5px;
@@ -239,11 +236,23 @@ body{
     overflow: hidden;
 }
 
+.button{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
 .button .item{
     padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+}
+
+.button .item:hover {
+    background-color: #363757;
+    color: aliceblue;
 }
 
 .circle li {
