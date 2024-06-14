@@ -118,12 +118,14 @@ UI.prototype.mostrarResultado = (total, seguro) => {
     div.classList.add('seguro-resumen');
     div.style.width = '500px'
     div.style.margin= '0 auto'
+    div.style.color = '#1f2259'
+    div.style.textTransform= 'upperCase'
     div.innerHTML = `
         <p class='header'>Tu Resumen</p>
-        <p class='font-bold'>Marca: <span class="font-normal"> ${textMarca}</span></p>
-        <p class='font-bold'>Año: <span class="font-normal"> ${year}</span></p>
-        <p class='font-bold'>Tipo: <span class="font-normal"> ${tipo}</span></p>
-        <p class='font-bold'>Total: <span class="font-normal"> $ ${total}</span></p>
+        <p class='font-bold'><strong>Marca:</strong> <span class="font-normal"> ${textMarca}</span></p>
+        <p class='font-bold'><strong>Año:</strong> <span class="font-normal"> ${year}</span></p>
+        <p class='font-bold'><strong>Tipo:</strong> <span class="font-normal"> ${tipo}</span></p>
+        <p class='font-bold'><strong>Total:</strong> <span class="font-normal"> $ ${total}</span></p>
     `;
 
     const resultadoDiv = document.querySelector('#resultado');
@@ -173,7 +175,7 @@ function cotizarSeguro(event) {
         ui.mostrarMensaje('Todos los campos son obligatorios', 'error');
         return;
     }
-    ui.mostrarMensaje('cotizando...', 'exito')
+    // ui.mostrarMensaje('cotizando...', 'exito')
 
     //ocultar las cotizaciones previas
     const resultados = document.querySelector('#resultado div');
